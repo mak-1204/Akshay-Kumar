@@ -1,5 +1,5 @@
 import { SectionHeader } from "./SectionHeader";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink, ArrowRight, Github } from "lucide-react";
 
 const PROJECTS = [
   {
@@ -8,6 +8,7 @@ const PROJECTS = [
     description: "A rural clinic struggling with bilingual patient management and voice records. Built a Next.js portal integrated with Sarvam AI for Tamil voice processing and Twilio SMS queues. 40% reduction in manual data entry.",
     tags: ["Next.js", "Sarvam AI", "Twilio", "Gemini API"],
     link: "https://sruthiclinic.web.app",
+    github: "https://github.com/akshaykumarm04/sruthi-clinic-portal",
     canIframe: true
   },
   {
@@ -16,6 +17,7 @@ const PROJECTS = [
     description: "Designed and developed a modern, high-performance web presence for the Acharya Group. Focused on seamless navigation, responsive architecture, and optimised loading states for a premium user experience.",
     tags: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://acharya-website.vercel.app/",
+    github: "https://github.com/akshaykumarm04/acharya-group-website",
     canIframe: true
   },
   {
@@ -24,6 +26,7 @@ const PROJECTS = [
     description: "Delivered end-to-end Power BI dashboards tracking orders, routing cards, and goods inward data. Translated raw Excel data into actionable KPIs — enabling real-time visibility into production delays and bottlenecks.",
     tags: ["Power BI", "Excel", "DAX"],
     link: "https://app.powerbi.com/",
+    github: "https://github.com/akshaykumarm04/manpro-equipments-dashboard",
     canIframe: false
   },
   {
@@ -32,6 +35,7 @@ const PROJECTS = [
     description: "SQL-based data exploration using joins, CTEs, temp tables, and aggregations to analyse global trends in cases, deaths, and vaccinations across countries. Prepared datasets for Tableau KPI dashboards.",
     tags: ["SQL", "Tableau", "Data Analysis"],
     link: "https://public.tableau.com/",
+    github: "https://github.com/akshaykumarm04/covid-19-analysis",
     canIframe: false
   },
   {
@@ -40,6 +44,7 @@ const PROJECTS = [
     description: "Analysed industrial machine sensor data to predict equipment failures. Trained Random Forest, SVM, and XGBoost models with SMOTE for class imbalance. Achieved 93% accuracy, reducing downtime by 25%.",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE"],
     link: "https://github.com/akshaykumarm04/predictive-maintenance",
+    github: "https://github.com/akshaykumarm04/predictive-maintenance",
     canIframe: false
   }
 ];
@@ -103,11 +108,23 @@ export function Projects() {
                 </div>
                 
                 <div className={`flex items-center gap-4 ${isEven ? 'justify-start' : 'justify-end'}`}>
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-foreground hover:text-primary transition-colors p-1"
+                      title="View GitHub Repository"
+                    >
+                      <Github size={20} />
+                    </a>
+                  )}
                   <a 
                     href={project.link} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-foreground hover:text-primary transition-colors p-1"
+                    title="View Live Project"
                   >
                     <ExternalLink size={20} />
                   </a>
@@ -119,7 +136,7 @@ export function Projects() {
       </div>
       
       <div className="mt-24 text-center">
-        <a href="https://github.com" target="_blank" className="inline-flex items-center gap-2 text-foreground font-code text-sm hover:text-primary transition-colors group">
+        <a href="https://github.com/akshaykumarm04" target="_blank" className="inline-flex items-center gap-2 text-foreground font-code text-sm hover:text-primary transition-colors group">
           View Full Project Archive
           <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </a>

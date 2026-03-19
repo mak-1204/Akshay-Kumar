@@ -89,7 +89,7 @@ export function Nav() {
           </li>
           <li>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/akshaykumarm04/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-primary transition-colors"

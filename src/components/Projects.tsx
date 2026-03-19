@@ -6,7 +6,7 @@ const PROJECTS = [
     title: "Sruthi Clinic Portal",
     type: "WEB DEVELOPMENT",
     description: "A focused appointment booking portal for a rural clinic, streamlining patient scheduling and management. Designed to improve patient accessibility and reduce manual booking overhead.",
-    tags: ["Next.js", "Firebase", "Web Design"],
+    tags: ["Next.js", "Firebase", "Web Design", "Vercel"],
     link: "https://sruthiclinic.web.app",
     github: "https://github.com/akshaykumarm04/sruthi-clinic-portal",
     canIframe: true

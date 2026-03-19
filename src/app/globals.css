@@ -35,6 +35,10 @@
     @apply bg-background text-foreground selection:bg-primary/30 selection:text-primary;
     font-feature-settings: "overline" 0, "vert" 0, "subs" 0, "sups" 0, "numr" 0, "dnom" 0, "frac" 0, "ordn" 0, "lnum" 0, "pnum" 0, "tnum" 0, "onum" 0, "zero" 0, "hist" 0, "jp78" 0, "jp83" 0, "jp90" 0, "jp04" 0, "smpl" 0, "trad" 0, "fwid" 0, "pwid" 0, "ruby" 0, "hkna" 0, "vkna" 0, "cpct" 0, "ital" 0, "halt" 0, "palt" 0, "vhal" 0, "vpal" 0, "salt" 0, "swsh" 0, "calt" 1, "liga" 1, "clig" 1, "dlig" 0, "hlig" 0, "rlig" 1, "case" 0, "smcp" 0, "c2sc" 0, "pcap" 0, "c2pc" 0, "unic" 0, "cpsp" 0, "vkrn" 0, "vpal" 0, "vhal" 0, "vkrn" 0;
   }
+  h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+  }
 }
 
 .cursor-glow {

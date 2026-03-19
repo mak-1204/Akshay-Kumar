@@ -5,6 +5,7 @@ import { Services } from '@/components/Services';
 import { SkillMatcher } from '@/components/SkillMatcher';
 import { GlowEffect } from '@/components/GlowEffect';
 import { SectionHeader } from '@/components/SectionHeader';
+import { Heart } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="lg:flex lg:justify-between lg:gap-4">
           
           {/* Left Panel - Fixed on Desktop */}
-          <Nav />
+          < Nav />
 
           {/* Right Panel - Scrollable */}
           <main className="pt-24 lg:w-1/2 lg:py-24">
@@ -82,10 +83,15 @@ export default function Home() {
 
             {/* Footer */}
             <footer className="max-w-md pb-16 text-sm text-muted-foreground sm:pb-0">
-              <p>
+              <p className="mb-4">
                 Built with <a href="#" className="text-foreground hover:text-primary transition-colors">Next.js</a> and <a href="#" className="text-foreground hover:text-primary transition-colors">Tailwind CSS</a>. 
                 Focusing on the intersection of Data, AI, and Business.
               </p>
+              <div className="flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.2em] text-muted-foreground/60">
+                <span>Made with</span>
+                <Heart size={12} className="text-red-500 fill-red-500" />
+                <span>by Mak</span>
+              </div>
             </footer>
 
           </main>

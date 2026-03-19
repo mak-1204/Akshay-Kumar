@@ -46,7 +46,7 @@
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  background: radial-gradient(800px at var(--cx, 50%) var(--cy, 50%), rgba(100, 255, 218, 0.15), transparent 80%);
+  background: radial-gradient(500px at var(--cx, 50%) var(--cy, 50%), rgba(100, 255, 218, 0.2), transparent 80%);
 }
 
 .nav-link-line {

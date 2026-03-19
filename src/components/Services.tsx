@@ -18,7 +18,7 @@ const SERVICES = [
     title: "Full-Stack Development",
     description: "Crafting high-performance digital products. Focused on Next.js architectures with seamless Firebase backends.",
     icon: <Code className="text-primary h-6 w-6" />,
-    tags: ["Next.js", "Firebase", "Scalable Apps"]
+    tags: ["Next.js", "Firebase", "Scalable Apps", "HTML", "CSS", "Vercel"]
   }
 ];
 

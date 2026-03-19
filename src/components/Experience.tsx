@@ -3,14 +3,14 @@ import { SectionHeader } from "./SectionHeader";
 
 const EXPERIENCE_DATA = [
   {
-    company: "Deloitte",
+    company: "",
     role: "Analyst",
     period: "Aug 2026 — Future",
     description: "Confirmed offer. Joining as an Analyst to leverage production engineering and data analytics background for strategic consulting and business optimization.",
     skills: ["Consulting", "Analysis", "Data Strategy"]
   },
   {
-    company: "Expedify",
+    company: "",
     role: "Business Analyst Intern",
     period: "2025",
     description: "AI-native CRM startup. Analyzed complex sales funnels and automated lead scoring workflows using AI-native CRM metrics.",
@@ -39,7 +39,9 @@ export function Experience() {
               <h3 className="text-foreground font-semibold group-hover:text-primary transition-colors text-lg">
                 {exp.role}
               </h3>
-              <p className="text-sm text-primary/80 font-code mb-2">{exp.company}</p>
+              {exp.company && (
+                <p className="text-sm text-primary/80 font-code mb-2">{exp.company}</p>
+              )}
               <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                 {exp.description}
               </p>

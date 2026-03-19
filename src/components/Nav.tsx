@@ -1,10 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, MessageSquare, Calendar } from 'lucide-react';
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
 ];
@@ -37,11 +38,11 @@ export function Nav() {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground">
           Akshay Kumar M
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-foreground sm:text-xl">
-          I build, analyse, and advise.
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
+          I build AI-powered systems for businesses.
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
-          Final-year Production Engineering student at NIT Trichy. Building digital products and data-driven solutions.
+          Analyst @ Deloitte (2026). Specialized in Production Engineering & Data Analytics. I build, analyse, and advise.
         </p>
 
         <nav className="hidden lg:block mt-16">
@@ -65,51 +66,72 @@ export function Nav() {
         </nav>
       </div>
 
-      <div className="mt-8 flex flex-col gap-6 lg:mt-0">
-        <a 
-          href="/resume.pdf" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex items-center gap-2 text-primary font-code text-sm w-fit border border-primary/20 px-4 py-2 rounded hover:bg-primary/10 transition-colors"
-        >
-          <FileText size={16} />
-          View Resume
-        </a>
-        <ul className="flex items-center gap-5 text-muted-foreground">
-          <li>
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-primary transition-colors"
-              aria-label="GitHub"
-            >
-              <Github size={24} />
-            </a>
-          </li>
-          <li>
-            <a 
-              href="https://www.linkedin.com/in/akshaykumarm04/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-primary transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={24} />
-            </a>
-          </li>
-          <li>
-            <a 
-              href="mailto:akshay04.nitt@gmail.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
-              aria-label="Email"
-            >
-              <Mail size={24} />
-            </a>
-          </li>
-        </ul>
+      <div className="mt-8 flex flex-col gap-4 lg:mt-0">
+        <div className="flex flex-wrap gap-3">
+          <a 
+            href="https://wa.me/yournumber" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 bg-primary text-primary-foreground font-code text-xs px-4 py-2 rounded hover:bg-primary/90 transition-colors"
+          >
+            <MessageSquare size={14} />
+            WhatsApp Me
+          </a>
+          <a 
+            href="#" 
+            className="group flex items-center gap-2 text-foreground font-code text-xs border border-border px-4 py-2 rounded hover:bg-secondary transition-colors"
+          >
+            <Calendar size={14} />
+            Book a Call
+          </a>
+        </div>
+        
+        <div className="flex items-center gap-6 mt-2">
+          <a 
+            href="/resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-xs font-code uppercase tracking-wider"
+          >
+            <FileText size={18} />
+            Resume
+          </a>
+          <ul className="flex items-center gap-5 text-muted-foreground">
+            <li>
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-primary transition-colors"
+                aria-label="GitHub"
+              >
+                <Github size={20} />
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.linkedin.com/in/akshaykumarm04/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} />
+              </a>
+            </li>
+            <li>
+              <a 
+                href="mailto:akshay04.nitt@gmail.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={20} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

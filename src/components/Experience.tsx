@@ -4,22 +4,22 @@ const EXPERIENCE_DATA = [
   {
     company: "Deloitte",
     role: "Analyst",
-    period: "Aug 2026 — Present",
-    description: "Confirmed offer. Joining as an Analyst to leverage production engineering and data analytics background for strategic consulting.",
+    period: "Aug 2026 — Future",
+    description: "Confirmed offer. Joining as an Analyst to leverage production engineering and data analytics background for strategic consulting and business optimization.",
     skills: ["Consulting", "Analysis", "Data Strategy"]
   },
   {
     company: "Expedify",
     role: "Business Analyst Intern",
     period: "2025",
-    description: "AI-native CRM startup. Focused on pipeline metrics, funnel analysis, and automating customer insights workflows.",
+    description: "AI-native CRM startup. Analyzed complex sales funnels and automated lead scoring workflows using AI-native CRM metrics.",
     skills: ["CRM", "SQL", "Tableau", "Python"]
   },
   {
     company: "SLB (ChampionX)",
     role: "Data & Automation Intern",
     period: "2024",
-    description: "Automated reporting workflows and built Alteryx pipelines. Developed Power BI dashboards for field operation efficiency.",
+    description: "Spearheaded the automation of field operation reporting. Built Alteryx pipelines that streamlined data collection for multi-regional operations.",
     skills: ["Alteryx", "Power BI", "Python", "Automation"]
   }
 ];
@@ -27,7 +27,7 @@ const EXPERIENCE_DATA = [
 export function Experience() {
   return (
     <section id="experience" className="mb-24 scroll-mt-24">
-      <SectionHeader number="02" title="Experience" />
+      <SectionHeader number="03" title="Experience" />
       <div className="space-y-12">
         {EXPERIENCE_DATA.map((exp, idx) => (
           <div key={idx} className="group relative grid grid-cols-1 md:grid-cols-8 gap-4 transition-all duration-300">

@@ -1,6 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Experience } from '@/components/Experience';
 import { Projects } from '@/components/Projects';
+import { Services } from '@/components/Services';
 import { SkillMatcher } from '@/components/SkillMatcher';
 import { GlowEffect } from '@/components/GlowEffect';
 import { SectionHeader } from '@/components/SectionHeader';
@@ -27,7 +28,7 @@ export default function Home() {
               <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
                 <p>
                   I'm a final-year Production Engineering student at <span className="text-foreground">NIT Trichy</span>, specializing in Data Analytics. 
-                  My journey is defined by a blend of engineering rigor and a passion for building digital products.
+                  My journey is defined by a blend of engineering rigor and a passion for building AI-powered digital products.
                 </p>
                 <p>
                   I have a "consulting mindset" — always looking to analyze, optimize, and then execute. 
@@ -57,10 +58,10 @@ export default function Home() {
                 <div className="pt-4">
                   <p className="text-foreground mb-4">A few technologies I've been working with recently:</p>
                   <ul className="grid grid-cols-2 gap-2 font-code text-sm">
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Next.js</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Next.js (Full-Stack)</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Python (Data Science)</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Firebase</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> SQL</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Firebase & LLMs</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> SQL & Tableau</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Power BI / Alteryx</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Sarvam AI / Twilio</li>
                   </ul>
@@ -70,6 +71,9 @@ export default function Home() {
 
             {/* AI Skill Matcher - Interactive Widget */}
             <SkillMatcher />
+
+            {/* Services Section */}
+            <Services />
 
             {/* Experience Section */}
             <Experience />
@@ -81,7 +85,7 @@ export default function Home() {
             <footer className="max-w-md pb-16 text-sm text-muted-foreground sm:pb-0">
               <p>
                 Built with <a href="#" className="text-foreground hover:text-primary transition-colors">Next.js</a> and <a href="#" className="text-foreground hover:text-primary transition-colors">Tailwind CSS</a>. 
-                Inspired by Brittany Chiang. Deployed with Firebase App Hosting.
+                Focusing on the intersection of Data, AI, and Business.
               </p>
             </footer>
 

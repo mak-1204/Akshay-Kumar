@@ -35,7 +35,7 @@ const PROJECTS = [
     description: "SQL-based data exploration using joins, CTEs, temp tables, and aggregations to analyse global trends in cases, deaths, and vaccinations across countries. Prepared datasets for Tableau KPI dashboards.",
     tags: ["SQL", "Tableau", "Data Analysis"],
     link: "https://public.tableau.com/",
-    github: "https://github.com/akshaykumarm04/covid-19-analysis",
+    github: "https://github.com/mak-1204/Covid_Data_Analytics",
     canIframe: false
   },
   {

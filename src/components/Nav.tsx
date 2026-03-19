@@ -42,7 +42,7 @@ export function Nav() {
           Technologist & Problem solver
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
-          Specialized in Engineering & Data Analytics. I build, analyse, and advise digital solutions for complex workflows.
+          Incoming Consultant at Deloitte USI. I build, analyse, and advise digital solutions for complex workflows.
         </p>
 
         <nav className="hidden lg:block mt-16">

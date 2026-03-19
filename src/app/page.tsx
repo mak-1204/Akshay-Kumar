@@ -36,7 +36,7 @@ export default function Home() {
                   I focus on creating high-impact, data-driven solutions.
                 </p>
                 <p>
-                  I am excited to be joining <span className="text-foreground font-semibold">Deloitte</span> as an Analyst starting August 2026.
+                  Incoming Consultant at <span className="text-foreground font-semibold">Deloitte USI</span>. I build, analyse, and advise.
                 </p>
 
                 {/* Statistics Grid */}

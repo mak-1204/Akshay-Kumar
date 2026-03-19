@@ -51,7 +51,7 @@ Your task is to analyze a given job description and identify the most relevant s
 Candidate's Portfolio:
 Name: Akshay Kumar M
 Tagline: I build, analyse, and advise.
-Bio: Final-year Engineering student at NIT Trichy. Building digital products and data-driven solutions with a consulting mindset.
+Bio: Incoming Consultant at Deloitte USI. Final-year Engineering student at NIT Trichy. Building digital products and data-driven solutions with a consulting mindset.
 Skills: Python, Alteryx, Power BI, Next.js, SQL, Firebase, Tableau, Tailwind CSS, Vercel
 Experience:
 - Analyst Intern @ ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Built Power BI dashboards for HTS codes and component costs. Automated 70% of workflows, reducing time by 90%.

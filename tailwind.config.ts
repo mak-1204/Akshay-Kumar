@@ -14,7 +14,7 @@ export default {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
         code: ['Fira Code', 'monospace'],
-        display: ['SK Greenland', 'sans-serif'],
+        display: ['Britanica Black', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

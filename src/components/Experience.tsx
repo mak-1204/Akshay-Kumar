@@ -1,3 +1,4 @@
+
 import { SectionHeader } from "./SectionHeader";
 
 const EXPERIENCE_DATA = [
@@ -36,8 +37,9 @@ export function Experience() {
             </div>
             <div className="md:col-span-6">
               <h3 className="text-foreground font-semibold group-hover:text-primary transition-colors text-lg">
-                {exp.role} · {exp.company}
+                {exp.role}
               </h3>
+              <p className="text-sm text-primary/80 font-code mb-2">{exp.company}</p>
               <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                 {exp.description}
               </p>

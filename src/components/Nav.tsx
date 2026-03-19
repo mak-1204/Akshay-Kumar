@@ -40,7 +40,7 @@ export function Nav() {
           Akshay Kumar M
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
-          I build AI-powered systems for businesses.
+          Technologist & Problem solver
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
           Analyst @ Deloitte (2026). Specialized in Production Engineering & Data Analytics. I build, analyse, and advise.

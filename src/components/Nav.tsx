@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -69,6 +68,8 @@ export function Nav() {
       <div className="mt-8 flex flex-col gap-6 lg:mt-0">
         <a 
           href="/resume.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="group flex items-center gap-2 text-primary font-code text-sm w-fit border border-primary/20 px-4 py-2 rounded hover:bg-primary/10 transition-colors"
         >
           <FileText size={16} />
@@ -76,17 +77,33 @@ export function Nav() {
         </a>
         <ul className="flex items-center gap-5 text-muted-foreground">
           <li>
-            <a href="https://github.com" className="hover:text-primary transition-colors">
+            <a 
+              href="https://github.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary transition-colors"
+              aria-label="GitHub"
+            >
               <Github size={24} />
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com" className="hover:text-primary transition-colors">
+            <a 
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
               <Linkedin size={24} />
             </a>
           </li>
           <li>
-            <a href="mailto:hello@akshay.v" className="hover:text-primary transition-colors">
+            <a 
+              href="mailto:hello@akshay.v" 
+              className="hover:text-primary transition-colors"
+              aria-label="Email"
+            >
               <Mail size={24} />
             </a>
           </li>

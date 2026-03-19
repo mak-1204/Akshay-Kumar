@@ -37,6 +37,23 @@ export default function Home() {
                 <p>
                   I am excited to be joining <span className="text-foreground font-semibold">Deloitte</span> as an Analyst starting August 2026.
                 </p>
+
+                {/* Statistics Grid */}
+                <div className="grid grid-cols-3 gap-4 pt-8 pb-4">
+                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-secondary/40 border border-border/50 hover:border-primary/30 transition-colors">
+                    <span className="text-2xl font-bold text-foreground">1+</span>
+                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest text-center mt-1">Years Experience</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-secondary/40 border border-border/50 hover:border-primary/30 transition-colors">
+                    <span className="text-2xl font-bold text-foreground">10+</span>
+                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest text-center mt-1">Projects</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-secondary/40 border border-border/50 hover:border-primary/30 transition-colors">
+                    <span className="text-2xl font-bold text-foreground">2+</span>
+                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest text-center mt-1">Clients</span>
+                  </div>
+                </div>
+
                 <div className="pt-4">
                   <p className="text-foreground mb-4">A few technologies I've been working with recently:</p>
                   <ul className="grid grid-cols-2 gap-2 font-code text-sm">

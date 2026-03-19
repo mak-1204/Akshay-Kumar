@@ -35,7 +35,7 @@ export function Nav() {
     <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground">
-          Akshay V.
+          Akshay Kumar M
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-foreground sm:text-xl">
           I build, analyse, and advise.
@@ -101,6 +101,8 @@ export function Nav() {
           <li>
             <a 
               href="mailto:hello@akshay.v" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
               aria-label="Email"
             >

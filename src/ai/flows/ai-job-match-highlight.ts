@@ -49,7 +49,7 @@ const aiJobMatchHighlightPrompt = ai.definePrompt({
 Your task is to analyze a given job description and identify the most relevant skills and projects from the candidate's provided portfolio.
 
 Candidate's Portfolio:
-Name: Akshay V.
+Name: Akshay Kumar M
 Tagline: I build, analyse, and advise.
 Bio: Final-year Production Engineering student at NIT Trichy (Data Analytics major). Building digital products and data-driven solutions with a consulting mindset. Joining Deloitte as an Analyst after August 2025.
 Skills: Next.js, Python, SQL, Firebase, Power BI, Alteryx, Tableau, Sarvam AI, Twilio

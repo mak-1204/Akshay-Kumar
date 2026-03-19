@@ -1,10 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Akshay V. — Portfolio',
-  description: 'Portfolio of Akshay V., an Analyst at Deloitte and Production Engineering student at NIT Trichy.',
+  title: 'Akshay Kumar M — Portfolio',
+  description: 'Portfolio of Akshay Kumar M, an Analyst at Deloitte and Production Engineering student at NIT Trichy.',
 };
 
 export default function RootLayout({

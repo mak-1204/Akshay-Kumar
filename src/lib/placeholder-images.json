@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-hospital",
+      "description": "Hospital Management Portal UI",
+      "imageUrl": "https://picsum.photos/seed/hospital/800/600",
+      "imageHint": "hospital medical"
+    },
+    {
+      "id": "project-automation",
+      "description": "Data Pipeline Automation Dashboard",
+      "imageUrl": "https://picsum.photos/seed/automation/800/600",
+      "imageHint": "data automation"
+    }
+  ]
 }

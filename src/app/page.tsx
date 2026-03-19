@@ -1,3 +1,77 @@
+
+import { Nav } from '@/components/Nav';
+import { Experience } from '@/components/Experience';
+import { Projects } from '@/components/Projects';
+import { SkillMatcher } from '@/components/SkillMatcher';
+import { GlowEffect } from '@/components/GlowEffect';
+import { SectionHeader } from '@/components/SectionHeader';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="relative bg-background font-body">
+      <GlowEffect />
+      
+      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div className="lg:flex lg:justify-between lg:gap-4">
+          
+          {/* Left Panel - Fixed on Desktop */}
+          <Nav />
+
+          {/* Right Panel - Scrollable */}
+          <main className="pt-24 lg:w-1/2 lg:py-24">
+            
+            {/* About Section */}
+            <section id="about" className="mb-24 scroll-mt-24">
+              <div className="lg:hidden mb-8">
+                <SectionHeader number="01" title="About" />
+              </div>
+              <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
+                <p>
+                  I'm a final-year Production Engineering student at <span className="text-foreground">NIT Trichy</span>, specializing in Data Analytics. 
+                  My journey is defined by a blend of engineering rigor and a passion for building digital products.
+                </p>
+                <p>
+                  I have a "consulting mindset" — always looking to analyze, optimize, and then execute. 
+                  Whether it's building a bilingual hospital portal or automating field operation reporting pipelines, 
+                  I focus on creating high-impact, data-driven solutions.
+                </p>
+                <p>
+                  I am excited to be joining <span className="text-foreground font-semibold">Deloitte</span> as an Analyst starting August 2025.
+                </p>
+                <div className="pt-4">
+                  <p className="text-foreground mb-4">A few technologies I've been working with recently:</p>
+                  <ul className="grid grid-cols-2 gap-2 font-code text-sm">
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Next.js</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Python (Data Science)</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Firebase</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> SQL</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Power BI / Alteryx</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Sarvam AI / Twilio</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* AI Skill Matcher - Interactive Widget */}
+            <SkillMatcher />
+
+            {/* Experience Section */}
+            <Experience />
+
+            {/* Projects Section */}
+            <Projects />
+
+            {/* Footer */}
+            <footer className="max-w-md pb-16 text-sm text-muted-foreground sm:pb-0">
+              <p>
+                Built with <a href="#" className="text-foreground hover:text-primary transition-colors">Next.js</a> and <a href="#" className="text-foreground hover:text-primary transition-colors">Tailwind CSS</a>. 
+                Inspired by Brittany Chiang. Deployed with Firebase App Hosting.
+              </p>
+            </footer>
+
+          </main>
+        </div>
+      </div>
+    </div>
+  );
 }

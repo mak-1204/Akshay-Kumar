@@ -34,7 +34,7 @@ const PROJECTS = [
     type: "DATA ENGINEERING",
     description: "SQL-based data exploration using joins, CTEs, temp tables, and aggregations to analyse global trends in cases, deaths, and vaccinations across countries. Prepared datasets for Tableau KPI dashboards.",
     tags: ["SQL", "Tableau", "Data Analysis"],
-    link: "https://public.tableau.com/",
+    link: "https://github.com/mak-1204/Covid_Data_Analytics",
     github: "https://github.com/mak-1204/Covid_Data_Analytics",
     canIframe: false
   },
@@ -116,7 +116,7 @@ export function Projects() {
                       className="text-foreground hover:text-primary transition-colors p-1"
                       title="View GitHub Repository"
                     >
-                      <Github size={20} />
+                      <button aria-label="Github Repo"><Github size={20} /></button>
                     </a>
                   )}
                   <a 
@@ -126,7 +126,7 @@ export function Projects() {
                     className="text-foreground hover:text-primary transition-colors p-1"
                     title="View Live Project"
                   >
-                    <ExternalLink size={20} />
+                    <button aria-label="Live Project"><ExternalLink size={20} /></button>
                   </a>
                 </div>
               </div>

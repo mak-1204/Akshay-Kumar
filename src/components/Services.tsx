@@ -6,7 +6,7 @@ const SERVICES = [
     title: "AI Automation",
     description: "I build AI-native workflows that replace manual labor. From LLM chatbots to voice-enabled systems for local businesses.",
     icon: <Brain className="text-primary h-6 w-6" />,
-    tags: ["LLMs", "Sarvam AI", "Process Automation"]
+    tags: ["LLMs", "Sarvam AI", "n8n", "Process Automation"]
   },
   {
     title: "Data Analytics & Strategy",

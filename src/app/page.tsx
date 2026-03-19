@@ -60,9 +60,9 @@ export default function Home() {
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Next.js (Full-Stack)</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Python (Data Science)</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Firebase & LLMs</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> n8n & Automation</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> SQL & Tableau</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Power BI / Alteryx</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Sarvam AI / Twilio</li>
                   </ul>
                 </div>
               </div>

@@ -31,9 +31,8 @@ export default function Home() {
                   My journey is defined by a blend of engineering rigor and a passion for building AI-powered digital products.
                 </p>
                 <p>
-                  I have a "consulting mindset" — always looking to analyze, optimize, and then execute. 
-                  Whether it's building a bilingual hospital portal or automating field operation reporting pipelines, 
-                  I focus on creating high-impact, data-driven solutions.
+                  I operate with a consulting mindset—analyzing systems, optimizing processes, and executing end-to-end solutions. 
+                  Combining full-stack development, agentic AI, and data automation, I build high-impact, data-driven products.
                 </p>
                 <p>
                   Incoming Consultant at <span className="text-foreground font-semibold">Deloitte USI</span>. I build, analyse, and advise.

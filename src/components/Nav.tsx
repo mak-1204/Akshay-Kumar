@@ -35,14 +35,14 @@ export function Nav() {
   return (
     <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-white font-display">
+        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white font-display">
           Akshay Kumar M
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
           Technologist & Problem solver
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
-          Analyst @ Deloitte (2026). Specialized in Production Engineering & Data Analytics. I build, analyse, and advise.
+          Specialized in Production Engineering & Data Analytics. I build, analyse, and advise digital solutions for complex workflows.
         </p>
 
         <nav className="hidden lg:block mt-16">

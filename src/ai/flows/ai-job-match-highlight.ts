@@ -51,14 +51,12 @@ Your task is to analyze a given job description and identify the most relevant s
 Candidate's Portfolio:
 Name: Akshay Kumar M
 Tagline: I build, analyse, and advise.
-Bio: Final-year Production Engineering student at NIT Trichy (Data Analytics major). Building digital products and data-driven solutions with a consulting mindset. Joining Deloitte as an Analyst after August 2026.
-Skills: Next.js, Python, SQL, Firebase, Power BI, Alteryx, Tableau, Sarvam AI, Twilio
+Bio: Final-year Production Engineering student at NIT Trichy (Data Analytics major). Building digital products and data-driven solutions with a consulting mindset.
+Skills: Python, Alteryx, Power BI, Next.js, SQL, Firebase, Tableau, Sarvam AI, Twilio
 Experience:
-- Analyst @ Deloitte — Aug 2026 onwards (confirmed offer)
-- Business Analyst Intern @ Expedify — 2025, AI-native CRM startup, pipeline metrics + funnel analysis
-- Data & Automation Intern @ SLB (ChampionX) — 2024, automated reporting workflows, Power BI dashboards, Alteryx pipelines
+- Analyst Intern @ ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Built Power BI dashboards for HTS codes and component costs. Automated 70% of workflows, reducing time by 90%.
 Projects:
-- Sruthi Clinic & Speciality Hospital Portal — Next.js + Firebase + Sarvam AI (Tamil voice) + Twilio SMS + Gemini API chatbot + bilingual Tamil/English + token-based appointment queue + role-based access for doctors/nurses. Real client in Ambur, TN.
+- Sruthi Clinic & Speciality Hospital Portal — Next.js + Firebase + Sarvam AI (Tamil voice) + Twilio SMS + Gemini API chatbot.
 - SLB Field Ops Automation — Python, Alteryx, Power BI
 - Freelance Web Dev (Local Business Sites) — Firebase catalogue + WhatsApp inquiry sites for Ambur leather exporters
 - Expedify CRM Analytics Dashboard — SQL, Tableau, Business Analysis

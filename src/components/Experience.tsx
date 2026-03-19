@@ -1,27 +1,13 @@
-
 import { SectionHeader } from "./SectionHeader";
 
 const EXPERIENCE_DATA = [
   {
-    company: "",
-    role: "Analyst",
-    period: "Aug 2026 — Future",
-    description: "Confirmed offer. Joining as an Analyst to leverage production engineering and data analytics background for strategic consulting and business optimization.",
-    skills: ["Consulting", "Analysis", "Data Strategy"]
-  },
-  {
-    company: "",
-    role: "Business Analyst Intern",
-    period: "2025",
-    description: "AI-native CRM startup. Analyzed complex sales funnels and automated lead scoring workflows using AI-native CRM metrics.",
-    skills: ["CRM", "SQL", "Tableau", "Python"]
-  },
-  {
-    company: "SLB (ChampionX)",
-    role: "Data & Automation Intern",
-    period: "2024",
-    description: "Spearheaded the automation of field operation reporting. Built Alteryx pipelines that streamlined data collection for multi-regional operations.",
-    skills: ["Alteryx", "Power BI", "Python", "Automation"]
+    company: "ChampionX (SLB)",
+    role: "Analyst Intern",
+    period: "May 2025 — Jul 2025",
+    location: "Chennai, TN",
+    description: "Redesigned the entire FTA qualification process using Python and Alteryx by extracting rules from 12+ U.S. Free Trade Agreements, clustering them into 8 logical groups, and scripting tariff shift logic for each cluster.\n\nBuilt a Power BI dashboard incorporating HTS codes, component costs, EEL costs, tariff shifts, polymer percentages, and process types — eliminating manual qualification errors.\n\nAutomated 70% of the process end-to-end, reducing qualification time by 90% and significantly improving accuracy and decision-making efficiency.",
+    skills: ["Python", "Alteryx", "Power BI", "Automation"]
   }
 ];
 
@@ -37,12 +23,10 @@ export function Experience() {
             </div>
             <div className="md:col-span-6">
               <h3 className="text-foreground font-semibold group-hover:text-primary transition-colors text-lg">
-                {exp.role}
+                {exp.role} @ {exp.company}
               </h3>
-              {exp.company && (
-                <p className="text-sm text-primary/80 font-code mb-2">{exp.company}</p>
-              )}
-              <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+              <p className="text-sm text-primary/80 font-code mb-2">{exp.location}</p>
+              <p className="mt-2 text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                 {exp.description}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">

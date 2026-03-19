@@ -10,28 +10,32 @@ const PROJECTS = [
     description: "Problem: A rural clinic struggling with bilingual patient management and voice records. Solution: Built a Next.js portal integrated with Sarvam AI for Tamil voice processing and Twilio SMS queues. Result: 40% reduction in manual data entry.",
     tags: ["Next.js", "Sarvam AI", "Twilio", "Gemini API"],
     featured: true,
-    image: PlaceHolderImages.find(img => img.id === 'project-hospital')?.imageUrl
+    image: PlaceHolderImages.find(img => img.id === 'project-hospital')?.imageUrl,
+    link: "#"
+  },
+  {
+    title: "Acharya Group Website",
+    type: "Full-Stack Dev",
+    description: "Designed and developed a modern, high-performance web presence for the Acharya Group. Focused on seamless navigation, responsive architecture, and optimized loading states for a premium user experience.",
+    tags: ["Next.js", "Tailwind CSS", "Vercel"],
+    featured: false,
+    link: "https://acharya-website.vercel.app/"
   },
   {
     title: "SLB Field Ops Automation",
     type: "Data Engineering",
     description: "Problem: Fragmented reporting across multiple field operations. Solution: Designed Alteryx pipelines and Power BI dashboards. Result: Consolidated reporting reduced lead time for data insights by 60%.",
     tags: ["Python", "Alteryx", "Power BI"],
-    featured: false
+    featured: false,
+    link: "#"
   },
   {
     title: "Leather Export Catalog System",
     type: "Full-Stack Dev",
     description: "Problem: Local leather exporters in Ambur needed a simple way to manage catalogs. Solution: Firebase-powered catalog with WhatsApp integration for instant inquiries.",
     tags: ["Firebase", "WhatsApp API", "React"],
-    featured: false
-  },
-  {
-    title: "CRM Analytics Suite",
-    type: "Analytics",
-    description: "Problem: Lack of visibility into sales funnels for an AI startup. Solution: SQL-driven Tableau dashboard mapping pipeline metrics from scratch.",
-    tags: ["SQL", "Tableau", "Business Analysis"],
-    featured: false
+    featured: false,
+    link: "#"
   }
 ];
 
@@ -68,7 +72,7 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex items-center gap-4 lg:justify-end text-foreground">
-                   <a href="#" className="hover:text-primary transition-colors"><ExternalLink size={18} /></a>
+                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><ExternalLink size={18} /></a>
                 </div>
               </div>
             </div>
@@ -79,8 +83,8 @@ export function Projects() {
                   {project.type}
                 </div>
                 <div className="flex gap-4">
-                  <Github size={20} className="text-muted-foreground hover:text-primary cursor-pointer" />
-                  <ExternalLink size={20} className="text-muted-foreground hover:text-primary cursor-pointer" />
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Github size={20} /></a>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><ExternalLink size={20} /></a>
                 </div>
               </div>
               <h3 className="text-foreground text-xl font-bold mb-2 group-hover:text-primary transition-colors">

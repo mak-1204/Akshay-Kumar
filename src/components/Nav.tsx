@@ -100,7 +100,7 @@ export function Nav() {
           </li>
           <li>
             <a 
-              href="mailto:hello@akshay.v" 
+              href="mailto:akshay04.nitt@gmail.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"

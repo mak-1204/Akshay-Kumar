@@ -57,7 +57,7 @@ Experience:
 - Analyst Intern @ ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Built Power BI dashboards for HTS codes and component costs. Automated 70% of workflows, reducing time by 90%.
 Projects:
 - Sruthi Clinic Portal — Next.js + Firebase appointment booking system.
-- Acharya Group Website — Modern, responsive website built with Next.js, Tailwind CSS, and Vercel.
+- Acharya Group Website — Modern, responsive website built with Next.js, Tailwind CSS, Firebase, and Vercel.
 - Manpro Equipments Dashboard — Power BI, Excel, DAX
 - COVID-19 Global Trend Analysis — SQL, Tableau, Business Analysis
 - Predictive Maintenance System — Python, Scikit-learn, XGBoost, SMOTE

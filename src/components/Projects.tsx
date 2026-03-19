@@ -15,7 +15,7 @@ const PROJECTS = [
     title: "Acharya Group Website",
     type: "FULL-STACK DEV",
     description: "Designed and developed a modern, high-performance web presence for the Acharya Group. Focused on seamless navigation, responsive architecture, and optimised loading states for a premium user experience.",
-    tags: ["Next.js", "Tailwind CSS", "Vercel"],
+    tags: ["Next.js", "Tailwind CSS", "Firebase", "Vercel"],
     link: "https://acharya-website.vercel.app/",
     github: "https://github.com/mak-1204/acharya-website",
     canIframe: true

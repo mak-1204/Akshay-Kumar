@@ -33,7 +33,7 @@ export default function Home() {
                 </p>
                 <p>
                   I operate with a consulting mindset—analyzing systems, optimizing processes, and executing end-to-end solutions. 
-                  Combining full-stack development, agentic AI, and data automation, I build high-impact, data-driven products.
+                  Combining <span className="text-foreground font-bold">full-stack development</span>, <span className="text-foreground font-bold">agentic AI</span>, and <span className="text-foreground font-bold">data automation</span>, I build high-impact, data-driven products.
                 </p>
                 <p>
                   Incoming Consultant at <span className="text-foreground font-semibold">Deloitte USI</span>. I build, analyse, and advise.
@@ -84,13 +84,12 @@ export default function Home() {
             {/* Footer */}
             <footer className="max-w-md pb-16 text-sm text-muted-foreground sm:pb-0">
               <p className="mb-4">
-                Built with <a href="#" className="text-foreground hover:text-primary transition-colors">Next.js</a> and <a href="#" className="text-foreground hover:text-primary transition-colors">Tailwind CSS</a>. 
+                Built with <a href="https://nextjs.org/" target="_blank" className="text-foreground hover:text-primary transition-colors">Next.js</a> and <a href="https://tailwindcss.com/" target="_blank" className="text-foreground hover:text-primary transition-colors">Tailwind CSS</a>. 
                 Focusing on the intersection of Data, AI, and Business.
               </p>
               <div className="flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.2em] text-muted-foreground/60">
-                <span>Made with</span>
+                <span>Built with love by Mak</span>
                 <Heart size={12} className="text-red-500 fill-red-500" />
-                <span>by Mak</span>
               </div>
             </footer>
 

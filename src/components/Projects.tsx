@@ -43,8 +43,8 @@ const PROJECTS = [
     type: "MACHINE LEARNING",
     description: "Analysed industrial machine sensor data to predict equipment failures. Trained Random Forest, SVM, and XGBoost models with SMOTE for class imbalance. Achieved 93% accuracy, reducing downtime by 25%.",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE"],
-    link: "https://github.com/akshaykumarm04/predictive-maintenance",
-    github: "https://github.com/akshaykumarm04/predictive-maintenance",
+    link: "https://github.com/mak-1204/Predictive-Maintenance",
+    github: "https://github.com/mak-1204/Predictive-Maintenance",
     canIframe: false
   }
 ];

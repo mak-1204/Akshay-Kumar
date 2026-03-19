@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, FileText, MessageSquare, Calendar } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, MessageSquare } from 'lucide-react';
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
@@ -77,13 +77,6 @@ export function Nav() {
             <MessageSquare size={14} />
             WhatsApp Me
           </a>
-          <a 
-            href="#" 
-            className="group flex items-center gap-2 text-foreground font-code text-xs border border-border px-4 py-2 rounded hover:bg-secondary transition-colors"
-          >
-            <Calendar size={14} />
-            Book a Call
-          </a>
         </div>
         
         <div className="flex items-center gap-6 mt-2">
@@ -99,7 +92,7 @@ export function Nav() {
           <ul className="flex items-center gap-5 text-muted-foreground">
             <li>
               <a 
-                href="https://github.com" 
+                href="https://github.com/mak-1204" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="hover:text-primary transition-colors"

@@ -136,7 +136,7 @@ export function Projects() {
       </div>
       
       <div className="mt-24 text-center">
-        <a href="https://github.com/akshaykumarm04" target="_blank" className="inline-flex items-center gap-2 text-foreground font-code text-sm hover:text-primary transition-colors group">
+        <a href="https://github.com/mak-1204" target="_blank" className="inline-flex items-center gap-2 text-foreground font-code text-sm hover:text-primary transition-colors group">
           View Full Project Archive
           <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </a>

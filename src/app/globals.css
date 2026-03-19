@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,7 +38,11 @@
 }
 
 .cursor-glow {
-  background: radial-gradient(600px at var(--x) var(--y), rgba(100, 255, 218, 0.15), transparent 80%);
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(600px at var(--cx, 50%) var(--cy, 50%), rgba(100,255,218,0.04), transparent 80%);
 }
 
 .nav-link-line {

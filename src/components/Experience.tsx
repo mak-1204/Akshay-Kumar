@@ -8,6 +8,14 @@ const EXPERIENCE_DATA = [
     location: "Chennai, TN",
     description: "Redesigned the entire FTA qualification process using Python and Alteryx by extracting rules from 12+ U.S. Free Trade Agreements, clustering them into 8 logical groups, and scripting tariff shift logic for each cluster.\n\nBuilt a Power BI dashboard incorporating HTS codes, component costs, EEL costs, tariff shifts, polymer percentages, and process types — eliminating manual qualification errors.\n\nAutomated 70% of the process end-to-end, reducing qualification time by 90% and significantly improving accuracy and decision-making efficiency.",
     skills: ["Python", "Alteryx", "Power BI", "Automation"]
+  },
+  {
+    company: "Manpro Equipments",
+    role: "Freelance Data Analyst",
+    period: "Mar 2024 — Apr 2024",
+    location: "Remote",
+    description: "Delivered end-to-end Power BI dashboards tracking orders, routing cards, and goods inward data. Translated raw Excel data into actionable KPIs — enabling real-time visibility into production delays and bottlenecks.",
+    skills: ["Power BI", "Excel", "DAX"]
   }
 ];
 

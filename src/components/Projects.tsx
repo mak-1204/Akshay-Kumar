@@ -21,15 +21,6 @@ const PROJECTS = [
     canIframe: true
   },
   {
-    title: "Manpro Equipments Dashboard",
-    type: "DATA ANALYTICS",
-    description: "Delivered end-to-end Power BI dashboards tracking orders, routing cards, and goods inward data. Translated raw Excel data into actionable KPIs — enabling real-time visibility into production delays and bottlenecks.",
-    tags: ["Power BI", "Excel", "DAX"],
-    link: "https://app.powerbi.com/",
-    github: "https://github.com/akshaykumarm04/manpro-equipments-dashboard",
-    canIframe: false
-  },
-  {
     title: "COVID-19 Global Trend Analysis",
     type: "DATA ENGINEERING",
     description: "SQL-based data exploration using joins, CTEs, temp tables, and aggregations to analyse global trends in cases, deaths, and vaccinations across countries. Prepared datasets for Tableau KPI dashboards.",

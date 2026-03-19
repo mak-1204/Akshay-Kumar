@@ -54,11 +54,11 @@ Tagline: I build end-to-end AI solutions that solve real business problems using
 Bio: Incoming Consultant at Deloitte USI. Final-year Engineering student at NIT Trichy. I operate with a consulting mindset—analyzing systems, optimizing processes, and executing end-to-end solutions. Combining full-stack development, agentic AI, and data automation, I build high-impact, data-driven products.
 Skills: Python, Alteryx, Power BI, Next.js, SQL, Firebase, Tableau, Tailwind CSS, Vercel, n8n, Sarvam AI, Twilio
 Experience:
-- Analyst Intern @ ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Built Power BI dashboards for HTS codes and component costs. Automated 70% of workflows, reducing time by 90%.
+- Analyst Intern @ ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Automated 70% of workflows, reducing time by 90%.
+- Freelance Data Analyst @ Manpro Equipments — Mar 2024 – Apr 2024: Delivered end-to-end Power BI dashboards tracking orders and production bottlenecks. Translated raw Excel data into actionable KPIs.
 Projects:
 - Sruthi Clinic Portal — Next.js + Firebase appointment booking system.
 - Acharya Group Website — Modern, responsive website built with Next.js, Tailwind CSS, Firebase, and Vercel.
-- Manpro Equipments Dashboard — Power BI, Excel, DAX
 - COVID-19 Global Trend Analysis — SQL, Tableau, Business Analysis
 - Predictive Maintenance System — Python, Scikit-learn, XGBoost, SMOTE
 

@@ -13,7 +13,7 @@ const EXPERIENCE_DATA = [
     company: "Manpro Equipments",
     role: "Freelance Data Analyst",
     period: "Mar 2024 — Apr 2024",
-    location: "Remote",
+    location: "Chennai, TN",
     description: "Delivered end-to-end Power BI dashboards tracking orders, routing cards, and goods inward data. Translated raw Excel data into actionable KPIs — enabling real-time visibility into production delays and bottlenecks.",
     skills: ["Power BI", "Excel", "DAX"]
   }

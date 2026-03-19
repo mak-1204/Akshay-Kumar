@@ -7,19 +7,8 @@ const PROJECTS = [
     type: "AI AUTOMATION",
     description: "A rural clinic struggling with bilingual patient management and voice records. Built a Next.js portal integrated with Sarvam AI for Tamil voice processing and Twilio SMS queues. 40% reduction in manual data entry.",
     tags: ["Next.js", "Sarvam AI", "Twilio", "Gemini API"],
-    link: "#",
-    pattern: (
-      <svg className="absolute inset-0 h-full w-full opacity-20" fill="none" viewBox="0 0 400 400">
-        <defs>
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-        <circle cx="200" cy="200" r="80" stroke="currentColor" strokeWidth="1" className="animate-pulse" />
-        <circle cx="200" cy="200" r="120" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4 4" />
-      </svg>
-    )
+    link: "https://sruthiclinic.web.app",
+    canIframe: true
   },
   {
     title: "Acharya Group Website",
@@ -27,61 +16,31 @@ const PROJECTS = [
     description: "Designed and developed a modern, high-performance web presence for the Acharya Group. Focused on seamless navigation, responsive architecture, and optimised loading states for a premium user experience.",
     tags: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://acharya-website.vercel.app/",
-    pattern: (
-      <svg className="absolute inset-0 h-full w-full opacity-20" fill="none" viewBox="0 0 400 400">
-        <path d="M0 100h400M0 200h400M0 300h400M100 0v400M200 0v400M300 0v400" stroke="currentColor" strokeWidth="0.5" />
-        <rect x="100" y="100" width="100" height="100" stroke="currentColor" strokeWidth="1" />
-        <rect x="200" y="200" width="100" height="100" stroke="currentColor" strokeWidth="1" />
-      </svg>
-    )
+    canIframe: true
   },
   {
     title: "Manpro Equipments Dashboard",
     type: "DATA ANALYTICS",
     description: "Delivered end-to-end Power BI dashboards tracking orders, routing cards, and goods inward data. Translated raw Excel data into actionable KPIs — enabling real-time visibility into production delays and bottlenecks.",
     tags: ["Power BI", "Excel", "DAX"],
-    link: "#",
-    pattern: (
-      <svg className="absolute inset-0 h-full w-full opacity-20" fill="none" viewBox="0 0 400 400">
-        <rect x="50" y="250" width="40" height="100" stroke="currentColor" strokeWidth="1" />
-        <rect x="120" y="150" width="40" height="200" stroke="currentColor" strokeWidth="1" />
-        <rect x="190" y="200" width="40" height="150" stroke="currentColor" strokeWidth="1" />
-        <rect x="260" y="100" width="40" height="250" stroke="currentColor" strokeWidth="1" />
-        <path d="M50 250l70-100 70 50 70-100" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
-      </svg>
-    )
+    link: "https://app.powerbi.com/",
+    canIframe: false
   },
   {
     title: "COVID-19 Global Trend Analysis",
     type: "DATA ENGINEERING",
     description: "SQL-based data exploration using joins, CTEs, temp tables, and aggregations to analyse global trends in cases, deaths, and vaccinations across countries. Prepared datasets for Tableau KPI dashboards.",
     tags: ["SQL", "Tableau", "Data Analysis"],
-    link: "#",
-    pattern: (
-      <svg className="absolute inset-0 h-full w-full opacity-20" fill="none" viewBox="0 0 400 400">
-        <path d="M200 50v300M50 200h300" stroke="currentColor" strokeWidth="0.5" />
-        <circle cx="200" cy="200" r="150" stroke="currentColor" strokeWidth="0.5" />
-        <path d="M100 100l200 200M300 100L100 200" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
-        <rect x="180" y="180" width="40" height="40" stroke="currentColor" strokeWidth="1" />
-      </svg>
-    )
+    link: "https://public.tableau.com/",
+    canIframe: false
   },
   {
     title: "Predictive Maintenance System",
     type: "MACHINE LEARNING",
     description: "Analysed industrial machine sensor data to predict equipment failures. Trained Random Forest, SVM, and XGBoost models with SMOTE for class imbalance. Achieved 93% accuracy, reducing downtime by 25%.",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE"],
-    link: "#",
-    pattern: (
-      <svg className="absolute inset-0 h-full w-full opacity-20" fill="none" viewBox="0 0 400 400">
-        <circle cx="100" cy="100" r="5" fill="currentColor" />
-        <circle cx="300" cy="100" r="5" fill="currentColor" />
-        <circle cx="100" cy="300" r="5" fill="currentColor" />
-        <circle cx="300" cy="300" r="5" fill="currentColor" />
-        <circle cx="200" cy="200" r="10" stroke="currentColor" strokeWidth="1" />
-        <path d="M100 100l100 100M300 100l-100 100M100 300l100-100M300 300l-100-100" stroke="currentColor" strokeWidth="0.5" />
-      </svg>
-    )
+    link: "https://github.com/akshaykumarm04/predictive-maintenance",
+    canIframe: false
   }
 ];
 
@@ -98,10 +57,24 @@ export function Projects() {
               className={`group relative grid grid-cols-1 lg:grid-cols-12 gap-6 items-center`}
             >
               {/* Image Side */}
-              <div className={`lg:col-span-7 relative h-72 rounded-md overflow-hidden bg-[#020c1b] border border-primary/10 ${isEven ? 'lg:order-last' : ''}`}>
-                <div className="absolute inset-0 flex items-center justify-center text-primary/30">
-                  {project.pattern}
-                </div>
+              <div className={`lg:col-span-7 h-72 ${isEven ? 'lg:order-last' : ''}`}>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="proj-img-link block h-full">
+                  <div className="proj-img-wrapper h-full border border-primary/10 bg-[#020c1b]">
+                    {project.canIframe ? (
+                      <iframe src={project.link} className="proj-iframe" scrolling="no" tabIndex={-1}></iframe>
+                    ) : (
+                      <div className="flex flex-col items-center justify-center h-full text-primary/30 p-8">
+                        <span className="font-code text-[10px] mb-4 text-primary/50 tracking-tight break-all">
+                          {project.link.replace('https://', '')}
+                        </span>
+                        <ExternalLink size={32} className="opacity-20" />
+                      </div>
+                    )}
+                    <div className="proj-img-overlay">
+                      <span>Visit Site ↗</span>
+                    </div>
+                  </div>
+                </a>
               </div>
 
               {/* Content Side */}

@@ -12,7 +12,7 @@ const SERVICES = [
     title: "Data Analytics & Strategy",
     description: "Transforming raw data into consulting-grade insights. I build pipelines and dashboards that drive business decisions.",
     icon: <BarChart3 className="text-primary h-6 w-6" />,
-    tags: ["Power BI", "SQL", "Funnel Analysis"]
+    tags: ["Power BI", "SQL", "Funnel Analysis", "Alteryx", "Python", "ML"]
   },
   {
     title: "Full-Stack Development",

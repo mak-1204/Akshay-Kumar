@@ -27,7 +27,7 @@ export default function Home() {
               </div>
               <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
                 <p>
-                  I'm a final-year Production Engineering student at <span className="text-foreground">NIT Trichy</span>, specializing in Data Analytics. 
+                  I'm a final-year Engineering student at <span className="text-foreground">NIT Trichy</span>. 
                   My journey is defined by a blend of engineering rigor and a passion for building AI-powered digital products.
                 </p>
                 <p>

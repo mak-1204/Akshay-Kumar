@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -14,22 +15,37 @@ export function Nav() {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5, rootMargin: "-10% 0px -40% 0px" }
-    );
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -30% 0px',
+      threshold: [0, 0.25, 0.5, 0.75, 1],
+    };
 
-    document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section);
-    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
 
-    return () => observer.disconnect();
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach((section) => observer.observe(section));
+
+    // Special handling for the bottom of the page to ensure the last section highlights
+    const handleScroll = () => {
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
+      if (isAtBottom) {
+        setActiveSection('projects');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (

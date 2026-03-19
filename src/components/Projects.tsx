@@ -4,9 +4,9 @@ import { ExternalLink, ArrowRight, Github } from "lucide-react";
 const PROJECTS = [
   {
     title: "Sruthi Clinic Portal",
-    type: "AI AUTOMATION",
-    description: "A rural clinic struggling with bilingual patient management and voice records. Built a Next.js portal integrated with Sarvam AI for Tamil voice processing and Twilio SMS queues. 40% reduction in manual data entry.",
-    tags: ["Next.js", "Sarvam AI", "Twilio", "Gemini API"],
+    type: "WEB DEVELOPMENT",
+    description: "A focused appointment booking portal for a rural clinic, streamlining patient scheduling and management. Designed to improve patient accessibility and reduce manual booking overhead.",
+    tags: ["Next.js", "Firebase", "Web Design"],
     link: "https://sruthiclinic.web.app",
     github: "https://github.com/akshaykumarm04/sruthi-clinic-portal",
     canIframe: true

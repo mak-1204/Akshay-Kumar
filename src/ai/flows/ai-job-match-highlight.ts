@@ -52,11 +52,11 @@ Candidate's Portfolio:
 Name: Akshay Kumar M
 Tagline: I build, analyse, and advise.
 Bio: Final-year Production Engineering student at NIT Trichy (Data Analytics major). Building digital products and data-driven solutions with a consulting mindset.
-Skills: Python, Alteryx, Power BI, Next.js, SQL, Firebase, Tableau, Sarvam AI, Twilio, Tailwind CSS, Vercel
+Skills: Python, Alteryx, Power BI, Next.js, SQL, Firebase, Tableau, Tailwind CSS, Vercel
 Experience:
 - Analyst Intern @ ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Built Power BI dashboards for HTS codes and component costs. Automated 70% of workflows, reducing time by 90%.
 Projects:
-- Sruthi Clinic & Speciality Hospital Portal — Next.js + Firebase + Sarvam AI (Tamil voice) + Twilio SMS + Gemini API chatbot.
+- Sruthi Clinic Portal — Next.js + Firebase appointment booking system.
 - Acharya Group Website — Modern, responsive website built with Next.js, Tailwind CSS, and Vercel.
 - SLB Field Ops Automation — Python, Alteryx, Power BI
 - Leather Export Catalog System — Firebase catalog with WhatsApp integration

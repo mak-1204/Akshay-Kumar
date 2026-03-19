@@ -1,4 +1,3 @@
-
 import { Nav } from '@/components/Nav';
 import { Experience } from '@/components/Experience';
 import { Projects } from '@/components/Projects';
@@ -36,7 +35,7 @@ export default function Home() {
                   I focus on creating high-impact, data-driven solutions.
                 </p>
                 <p>
-                  I am excited to be joining <span className="text-foreground font-semibold">Deloitte</span> as an Analyst starting August 2025.
+                  I am excited to be joining <span className="text-foreground font-semibold">Deloitte</span> as an Analyst starting August 2026.
                 </p>
                 <div className="pt-4">
                   <p className="text-foreground mb-4">A few technologies I've been working with recently:</p>

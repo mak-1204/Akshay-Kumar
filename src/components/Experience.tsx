@@ -1,11 +1,10 @@
-
 import { SectionHeader } from "./SectionHeader";
 
 const EXPERIENCE_DATA = [
   {
     company: "Deloitte",
     role: "Analyst",
-    period: "Aug 2025 — Present",
+    period: "Aug 2026 — Present",
     description: "Confirmed offer. Joining as an Analyst to leverage production engineering and data analytics background for strategic consulting.",
     skills: ["Consulting", "Analysis", "Data Strategy"]
   },

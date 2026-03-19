@@ -42,7 +42,7 @@ export function Nav() {
           Technologist & Problem solver
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
-          Incoming Consultant at Deloitte USI. I build, analyse, and advise digital solutions for complex workflows.
+          I build end-to-end AI solutions that solve real business problems using full-stack dev, agentic AI, data analytics and automation
         </p>
 
         <nav className="hidden lg:block mt-16">

@@ -50,7 +50,7 @@ Your task is to analyze a given job description and identify the most relevant s
 
 Candidate's Portfolio:
 Name: Akshay Kumar M
-Tagline: I build, analyse, and advise.
+Tagline: I build end-to-end AI solutions that solve real business problems using full-stack dev, agentic AI, data analytics and automation.
 Bio: Incoming Consultant at Deloitte USI. Final-year Engineering student at NIT Trichy. Building digital products and data-driven solutions with a consulting mindset.
 Skills: Python, Alteryx, Power BI, Next.js, SQL, Firebase, Tableau, Tailwind CSS, Vercel
 Experience:

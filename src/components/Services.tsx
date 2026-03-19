@@ -59,7 +59,7 @@ export function Services() {
           <Rocket className="text-primary/40 h-8 w-8 mb-3" />
           <h4 className="text-foreground font-semibold">Ready to scale your business with AI?</h4>
           <p className="text-muted-foreground text-xs mt-1">Let's talk about your specific challenges.</p>
-          <a href="https://wa.me/yournumber" className="mt-4 text-xs font-code text-primary hover:underline uppercase tracking-widest">
+          <a href="https://wa.me/919994400311" target="_blank" rel="noopener noreferrer" className="mt-4 text-xs font-code text-primary hover:underline uppercase tracking-widest">
             Start a Conversation →
           </a>
         </div>

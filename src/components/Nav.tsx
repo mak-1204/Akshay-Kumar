@@ -69,7 +69,7 @@ export function Nav() {
       <div className="mt-8 flex flex-col gap-4 lg:mt-0">
         <div className="flex flex-wrap gap-3">
           <a 
-            href="https://wa.me/yournumber" 
+            href="https://wa.me/919994400311" 
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 bg-primary text-primary-foreground font-code text-xs px-4 py-2 rounded hover:bg-primary/90 transition-colors"

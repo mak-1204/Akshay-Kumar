@@ -33,7 +33,8 @@ export default function Home() {
                 </p>
                 <p>
                   I operate with a consulting mindset—analyzing systems, optimizing processes, and executing end-to-end solutions. 
-                  Combining <span className="text-foreground font-bold">full-stack development</span>, <span className="text-foreground font-bold">agentic AI</span>, and <span className="text-foreground font-bold">data automation</span>, I build high-impact, data-driven products.
+                  Combining <span className="text-foreground font-bold">Full-stack development</span>, <span className="text-foreground font-bold">Agentic AI</span>, <span className="text-foreground font-bold">Data Analytics</span> and <span className="text-foreground font-bold">Data automation</span>. 
+                  I build high-impact, data-driven products.
                 </p>
                 <p>
                   Incoming Consultant at <span className="text-foreground font-semibold">Deloitte USI</span>. I build, analyse, and advise.

@@ -1,8 +1,16 @@
-
 import { SectionHeader } from "./SectionHeader";
 import { ExternalLink, ArrowRight, Github } from "lucide-react";
 
 const PROJECTS = [
+  {
+    title: "Pratin Alagiri Portfolio",
+    type: "FULL-STACK DEV",
+    description: "A sleek, high-performance personal portfolio website built for a client. Features a modern aesthetic with smooth scrolling, responsive design, and optimized asset delivery.",
+    tags: ["Next.js", "Tailwind CSS", "Vercel", "UI/UX"],
+    link: "https://pratinalagiri.vercel.app/",
+    github: "https://github.com/mak-1204/Pratin-Alagiri",
+    canIframe: true
+  },
   {
     title: "Sruthi Clinic Portal",
     type: "WEB DEVELOPMENT",

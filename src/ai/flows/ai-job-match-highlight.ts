@@ -57,6 +57,7 @@ Experience:
 - Analyst Intern at ChampionX (SLB) — May 2025 – Jul 2025: Redesigned FTA qualification process using Python/Alteryx for 12+ U.S. Free Trade Agreements. Automated 70% of workflows, reducing time by 90%.
 - Freelance Data Analyst at Manpro Equipments — Mar 2024 – Apr 2024: Delivered end-to-end Power BI dashboards tracking orders and production bottlenecks. Translated raw Excel data into actionable KPIs.
 Projects:
+- Pratin Alagiri Portfolio — Modern personal portfolio with sleek UI/UX and Vercel optimization.
 - Sruthi Clinic Portal — Next.js + Firebase appointment booking system.
 - Acharya Group Website — Modern, responsive website built with Next.js, Tailwind CSS, Firebase, and Vercel.
 - COVID-19 Global Trend Analysis — SQL, Tableau, Business Analysis

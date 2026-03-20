@@ -59,9 +59,6 @@ export function Nav() {
               Technologist & Problem solver
             </h2>
           </div>
-          <div className="lg:hidden">
-            <ThemeToggle />
-          </div>
         </div>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
           I build end-to-end AI solutions that solve real business problems using full-stack dev, agentic AI, data analytics and automation
@@ -89,19 +86,17 @@ export function Nav() {
       </div>
 
       <div className="mt-8 flex flex-col gap-4 lg:mt-0">
-        <div className="hidden lg:block mb-4">
-          <ThemeToggle />
-        </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <a 
             href="https://wa.me/919994400311" 
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2 bg-primary text-primary-foreground font-code text-xs px-4 py-2 rounded hover:opacity-90 transition-all"
+            className="group flex items-center gap-2 bg-primary text-primary-foreground font-code text-xs px-4 py-2 rounded hover:opacity-90 transition-all h-10"
           >
             <MessageSquare size={14} />
             WhatsApp Me
           </a>
+          <ThemeToggle />
         </div>
         
         <div className="flex items-center gap-6 mt-2">

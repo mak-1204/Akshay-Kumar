@@ -69,11 +69,11 @@
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  background: radial-gradient(250px at var(--cx, 50%) var(--cy, 50%), rgba(166, 255, 238, 0.15), transparent 80%);
+  background: radial-gradient(200px at var(--cx, 50%) var(--cy, 50%), hsla(166, 100%, 35%, 0.12), transparent 80%);
 }
 
 .dark .cursor-glow {
-  background: radial-gradient(250px at var(--cx, 50%) var(--cy, 50%), rgba(100, 255, 218, 0.25), transparent 80%);
+  background: radial-gradient(220px at var(--cx, 50%) var(--cy, 50%), hsla(166, 100%, 70%, 0.2), transparent 80%);
 }
 
 .nav-link-line {

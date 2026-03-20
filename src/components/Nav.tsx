@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -53,7 +52,7 @@ export function Nav() {
       <div>
         <div className="flex justify-between items-start">
           <div>
-            <h1 className="text-4xl sm:text-5xl tracking-tight text-foreground">
+            <h1 className="text-4xl sm:text-5xl tracking-tight text-foreground font-semibold">
               Akshay Kumar M
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
@@ -108,8 +107,8 @@ export function Nav() {
         <div className="flex items-center gap-6 mt-2">
           <a 
             href="/resume.pdf" 
-            target="_blank"
-            rel="noopener noreferrer"
+            target="_blank" 
+            rel="noopener noreferrer" 
             className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-xs font-code uppercase tracking-wider"
           >
             <FileText size={18} />
@@ -141,8 +140,8 @@ export function Nav() {
             <li>
               <a 
                 href="mailto:akshay04.nitt@gmail.com" 
-                target="_blank"
-                rel="noopener noreferrer"
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="hover:text-primary transition-colors"
                 aria-label="Email"
               >

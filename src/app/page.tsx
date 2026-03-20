@@ -59,14 +59,14 @@ export default function Home() {
                 <div className="pt-4">
                   <p className="text-foreground mb-4">A few technologies I've been working with recently:</p>
                   <ul className="grid grid-cols-2 gap-2 font-code text-sm">
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Next.js (Full-Stack)</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Python (Data Science)</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Firebase & LLMs</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> MySQL </li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Power BI & Tableau</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> n8n & Automation</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> SQL & Tableau</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Power BI / Alteryx</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Alteryx</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Firebase </li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Next.js (Full-Stack)</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Tailwind CSS</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Vercel</li>
                   </ul>
                 </div>
               </div>

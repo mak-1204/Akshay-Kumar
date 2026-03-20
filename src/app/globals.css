@@ -1,9 +1,33 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 166 100% 35%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 166 100% 35%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 166 100% 35%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
     --background: 222 47% 11%;
     --foreground: 214 20% 69%;
     --card: 222 47% 13%;
@@ -23,7 +47,6 @@
     --border: 222 47% 20%;
     --input: 222 47% 20%;
     --ring: 166 100% 70%;
-    --radius: 0.5rem;
   }
 }
 
@@ -32,12 +55,12 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground selection:bg-primary/30 selection:text-primary;
+    @apply bg-background text-foreground selection:bg-primary/30 selection:text-primary transition-colors duration-300;
     font-feature-settings: "overline" 0, "vert" 0, "subs" 0, "sups" 0, "numr" 0, "dnom" 0, "frac" 0, "ordn" 0, "lnum" 0, "pnum" 0, "tnum" 0, "onum" 0, "zero" 0, "hist" 0, "jp78" 0, "jp83" 0, "jp90" 0, "jp04" 0, "smpl" 0, "trad" 0, "fwid" 0, "pwid" 0, "ruby" 0, "hkna" 0, "vkna" 0, "cpct" 0, "ital" 0, "halt" 0, "palt" 0, "vhal" 0, "vpal" 0, "salt" 0, "swsh" 0, "calt" 1, "liga" 1, "clig" 1, "dlig" 0, "hlig" 0, "rlig" 1, "case" 0, "smcp" 0, "c2sc" 0, "pcap" 0, "c2pc" 0, "unic" 0, "cpsp" 0, "vkrn" 0, "vpal" 0, "vhal" 0, "vkrn" 0;
   }
   h1 {
     font-family: 'Antapani', 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500; /* Medium weight */
+    font-weight: 500;
   }
 }
 
@@ -46,11 +69,15 @@
   inset: 0;
   pointer-events: none;
   z-index: 9999;
+  background: radial-gradient(250px at var(--cx, 50%) var(--cy, 50%), rgba(166, 255, 238, 0.15), transparent 80%);
+}
+
+.dark .cursor-glow {
   background: radial-gradient(250px at var(--cx, 50%) var(--cy, 50%), rgba(100, 255, 218, 0.25), transparent 80%);
 }
 
 .nav-link-line {
-  @apply transition-all duration-300 ease-in-out;
+  @apply transition-all duration-300 ease-in-out bg-muted-foreground/30;
   width: 32px;
   height: 1px;
 }
@@ -65,23 +92,13 @@
   @apply text-primary;
 }
 
-.section-reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.section-reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .proj-img-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
   border-radius: 4px;
+  @apply bg-secondary/20;
 }
 
 .proj-iframe {
@@ -96,7 +113,7 @@
 .proj-img-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(100,255,218,0);
+  background: rgba(var(--primary), 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,6 +126,5 @@
 }
 
 .proj-img-link:hover .proj-img-overlay {
-  background: rgba(10,25,47,0.85);
-  color: #64ffda;
+  @apply bg-background/80 text-primary;
 }

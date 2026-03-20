@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, FileText, MessageSquare } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
@@ -32,7 +33,6 @@ export function Nav() {
     const sections = document.querySelectorAll('section[id]');
     sections.forEach((section) => observer.observe(section));
 
-    // Special handling for the bottom of the page to ensure the last section highlights
     const handleScroll = () => {
       const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
       if (isAtBottom) {
@@ -51,12 +51,19 @@ export function Nav() {
   return (
     <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl sm:text-5xl tracking-tight text-white">
-          Akshay Kumar M
-        </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
-          Technologist & Problem solver
-        </h2>
+        <div className="flex justify-between items-start">
+          <div>
+            <h1 className="text-4xl sm:text-5xl tracking-tight text-foreground">
+              Akshay Kumar M
+            </h1>
+            <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
+              Technologist & Problem solver
+            </h2>
+          </div>
+          <div className="lg:hidden">
+            <ThemeToggle />
+          </div>
+        </div>
         <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
           I build end-to-end AI solutions that solve real business problems using full-stack dev, agentic AI, data analytics and automation
         </p>
@@ -71,7 +78,7 @@ export function Nav() {
                     activeSection === item.href.slice(1) ? 'active' : ''
                   }`}
                 >
-                  <span className="nav-link-line mr-4 bg-muted-foreground group-hover:bg-primary"></span>
+                  <span className="nav-link-line mr-4 group-hover:bg-primary"></span>
                   <span className="nav-link-text font-code text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground">
                     {item.label}
                   </span>
@@ -83,12 +90,15 @@ export function Nav() {
       </div>
 
       <div className="mt-8 flex flex-col gap-4 lg:mt-0">
+        <div className="hidden lg:block mb-4">
+          <ThemeToggle />
+        </div>
         <div className="flex flex-wrap gap-3">
           <a 
             href="https://wa.me/919994400311" 
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2 bg-primary text-primary-foreground font-code text-xs px-4 py-2 rounded hover:bg-primary/90 transition-colors"
+            className="group flex items-center gap-2 bg-primary text-primary-foreground font-code text-xs px-4 py-2 rounded hover:opacity-90 transition-all"
           >
             <MessageSquare size={14} />
             WhatsApp Me
@@ -114,7 +124,7 @@ export function Nav() {
                 className="hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
-                <button aria-label="Github Profile" className="hover:text-primary transition-colors"><Github size={20} /></button>
+                <Github size={20} />
               </a>
             </li>
             <li>

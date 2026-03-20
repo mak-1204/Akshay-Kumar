@@ -1,3 +1,4 @@
+
 import { SectionHeader } from "./SectionHeader";
 import { ExternalLink, ArrowRight, Github } from "lucide-react";
 
@@ -55,7 +56,7 @@ export function Projects() {
               {/* Image Side */}
               <div className={`lg:col-span-7 h-72 ${isEven ? 'lg:order-last' : ''}`}>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="proj-img-link block h-full">
-                  <div className="proj-img-wrapper h-full border border-primary/10 bg-[#020c1b]">
+                  <div className="proj-img-wrapper h-full border border-primary/10">
                     {project.canIframe ? (
                       <iframe src={project.link} className="proj-iframe" scrolling="no" tabIndex={-1}></iframe>
                     ) : (
@@ -83,7 +84,7 @@ export function Projects() {
                 </h3>
                 
                 {/* Overlay Box */}
-                <div className={`bg-[#0a192f]/95 p-6 rounded-md shadow-2xl border border-primary/5 mb-4 ${isEven ? 'lg:-mr-16' : 'lg:-ml-16'} ${isEven ? 'text-left' : 'text-right'}`}>
+                <div className={`bg-card/95 p-6 rounded-md shadow-2xl border border-primary/5 mb-4 ${isEven ? 'lg:-mr-16' : 'lg:-ml-16'} ${isEven ? 'text-left' : 'text-right'}`}>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {project.description}
                   </p>
@@ -107,7 +108,7 @@ export function Projects() {
                       className="text-foreground hover:text-primary transition-colors p-1"
                       title="View GitHub Repository"
                     >
-                      <button aria-label="Github Repo"><Github size={20} /></button>
+                      <Github size={20} />
                     </a>
                   )}
                   <a 
@@ -117,7 +118,7 @@ export function Projects() {
                     className="text-foreground hover:text-primary transition-colors p-1"
                     title="View Live Project"
                   >
-                    <button aria-label="Live Project"><ExternalLink size={20} /></button>
+                    <ExternalLink size={20} />
                   </a>
                 </div>
               </div>

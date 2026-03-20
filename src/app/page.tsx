@@ -42,15 +42,15 @@ export default function Home() {
 
                 {/* Statistics Grid */}
                 <div className="grid grid-cols-3 gap-4 pt-8 pb-4">
-                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-secondary/40 border border-border/50 hover:border-primary/30 transition-colors">
+                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-gradient-to-br from-secondary/80 to-background border border-border/50 hover:border-primary/30 transition-all shadow-sm">
                     <span className="text-2xl font-bold text-foreground">1+</span>
                     <span className="text-[10px] text-muted-foreground uppercase tracking-widest text-center mt-1">Years Experience</span>
                   </div>
-                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-secondary/40 border border-border/50 hover:border-primary/30 transition-colors">
+                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-gradient-to-br from-secondary/80 to-background border border-border/50 hover:border-primary/30 transition-all shadow-sm">
                     <span className="text-2xl font-bold text-foreground">10+</span>
                     <span className="text-[10px] text-muted-foreground uppercase tracking-widest text-center mt-1">Projects</span>
                   </div>
-                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-secondary/40 border border-border/50 hover:border-primary/30 transition-colors">
+                  <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-gradient-to-br from-secondary/80 to-background border border-border/50 hover:border-primary/30 transition-all shadow-sm">
                     <span className="text-2xl font-bold text-foreground">2+</span>
                     <span className="text-[10px] text-muted-foreground uppercase tracking-widest text-center mt-1">Clients</span>
                   </div>

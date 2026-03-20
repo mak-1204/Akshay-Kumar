@@ -65,6 +65,8 @@ export default function Home() {
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> n8n & Automation</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> SQL & Tableau</li>
                     <li className="flex items-center gap-2"><span className="text-primary">▹</span> Power BI / Alteryx</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Tailwind CSS</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">▹</span> Vercel</li>
                   </ul>
                 </div>
               </div>

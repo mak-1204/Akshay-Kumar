@@ -1,9 +1,19 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export function GlowEffect() {
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
+    // Only enable the effect on desktop screens (>= 1024px)
+    const checkVisibility = () => {
+      setIsVisible(window.innerWidth >= 1024);
+    };
+
+    checkVisibility();
+    window.addEventListener('resize', checkVisibility);
+
     const updateGlow = (x: number, y: number) => {
       document.documentElement.style.setProperty('--cx', x + 'px');
       document.documentElement.style.setProperty('--cy', y + 'px');
@@ -13,22 +23,15 @@ export function GlowEffect() {
       updateGlow(e.clientX, e.clientY);
     };
 
-    const handleTouch = (e: TouchEvent) => {
-      if (e.touches && e.touches[0]) {
-        updateGlow(e.touches[0].clientX, e.touches[0].clientY);
-      }
-    };
-
     window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('touchstart', handleTouch, { passive: true });
-    window.addEventListener('touchmove', handleTouch, { passive: true });
 
     return () => {
+      window.removeEventListener('resize', checkVisibility);
       window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('touchstart', handleTouch);
-      window.removeEventListener('touchmove', handleTouch);
     };
   }, []);
+
+  if (!isVisible) return null;
 
   return <div className="cursor-glow" />;
 }

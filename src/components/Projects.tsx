@@ -31,9 +31,9 @@ const PROJECTS = [
   },
   {
     title: "Darkwave Digital",
-    type: "FULL-STACK DEV",
-    description: "A high-performance agency landing page built with a focus on cutting-edge UI/UX, optimized performance, and modern interactive elements.",
-    tags: ["Next.js", "Tailwind CSS", "Vercel", "Animation"],
+    type: "AGENCY PROJECT",
+    description: "Full-service digital marketing agency platform focusing on SEO, lead generation, and high-performance website building for growth-oriented brands.",
+    tags: ["Digital Strategy", "Lead Gen", "Modern Web"],
     link: "https://darkwave-digital.vercel.app/",
     github: "https://github.com/mak-1204",
     canIframe: true
@@ -48,10 +48,10 @@ const PROJECTS = [
     canIframe: true
   },
   {
-    title: "Maseesambur",
-    type: "WEB DEVELOPMENT",
-    description: "Digital storefront and brand landing page for a specialized culinary venture, featuring smooth transitions and responsive architecture.",
-    tags: ["Next.js", "Tailwind CSS", "Vercel", "UI/UX"],
+    title: "Masee's Footwear",
+    type: "E-COMMERCE",
+    description: "Premium handcrafted leather footwear store in Ambur — showcasing modern style with durable materials through a refined digital storefront.",
+    tags: ["Web Design", "E-com Architecture", "UI/UX"],
     link: "https://maseesambur.vercel.app/",
     github: "https://github.com/mak-1204",
     canIframe: true

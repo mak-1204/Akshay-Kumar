@@ -60,9 +60,9 @@ Projects:
 - PackTogether — Collaborative trip planning platform with real-time sync.
 - Unscripted — AI-driven storytelling and content generation platform.
 - Pratin Alagiri Portfolio — Modern personal portfolio with sleek UI/UX and Vercel optimization.
-- Darkwave Digital — High-performance agency landing page with modern UI/UX.
+- Darkwave Digital — Full-service digital marketing agency platform focusing on SEO, lead generation, and high-performance website building for growth-oriented brands.
 - HiveHaven — Community platform for enthusiasts and hobbyists.
-- Maseesambur — Digital storefront and brand storytelling site.
+- Masee's Footwear — Premium handcrafted leather footwear store in Ambur — showcasing modern style with durable materials through a refined digital storefront.
 - Sruthi Clinic Portal — Next.js + Firebase appointment booking system.
 - Acharya Group Website — Modern, responsive website built with Next.js, Tailwind CSS, Firebase, and Vercel.
 - COVID-19 Global Trend Analysis — SQL, Tableau, Business Analysis

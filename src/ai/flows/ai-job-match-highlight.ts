@@ -58,7 +58,7 @@ Experience:
 - Freelance Data Analyst at Manpro Equipments — Mar 2024 – Apr 2024: Delivered end-to-end Power BI dashboards tracking orders and production bottlenecks. Translated raw Excel data into actionable KPIs.
 Projects:
 - PackTogether — Collaborative trip planning platform with real-time sync.
-- Unscripted Lemon — AI-driven storytelling and content generation platform.
+- Unscripted — AI-driven storytelling and content generation platform.
 - Pratin Alagiri Portfolio — Modern personal portfolio with sleek UI/UX and Vercel optimization.
 - Darkwave Digital — High-performance agency landing page with modern UI/UX.
 - HiveHaven — Community platform for enthusiasts and hobbyists.

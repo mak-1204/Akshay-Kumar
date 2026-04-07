@@ -12,7 +12,7 @@ const PROJECTS = [
     canIframe: true
   },
   {
-    title: "Unscripted Lemon",
+    title: "Unscripted",
     type: "AI SOLUTIONS",
     description: "An AI-driven platform for creative content generation, leveraging LLMs to assist writers in building complex narratives and scripts dynamically.",
     tags: ["Next.js", "AI", "Genkit", "Tailwind CSS"],

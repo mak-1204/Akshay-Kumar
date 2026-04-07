@@ -3,18 +3,63 @@ import { ExternalLink, ArrowRight, Github } from "lucide-react";
 
 const PROJECTS = [
   {
+    title: "PackTogether",
+    type: "FULL-STACK DEV",
+    description: "A collaborative trip planning platform enabling groups to coordinate itineraries, shared expenses, and logistics in real-time with seamless synchronization.",
+    tags: ["Next.js", "Firebase", "Tailwind CSS", "Real-time"],
+    link: "https://packtogether.vercel.app/",
+    github: "https://github.com/mak-1204",
+    canIframe: true
+  },
+  {
+    title: "Unscripted Lemon",
+    type: "AI SOLUTIONS",
+    description: "An AI-driven platform for creative content generation, leveraging LLMs to assist writers in building complex narratives and scripts dynamically.",
+    tags: ["Next.js", "AI", "Genkit", "Tailwind CSS"],
+    link: "https://unscripted-lemon.vercel.app/",
+    github: "https://github.com/mak-1204",
+    canIframe: true
+  },
+  {
     title: "Pratin Alagiri Portfolio",
     type: "FULL-STACK DEV",
     description: "A sleek, high-performance personal portfolio website built for a client. Features a modern aesthetic with smooth scrolling, responsive design, and optimized asset delivery.",
     tags: ["Next.js", "Tailwind CSS", "Vercel", "UI/UX"],
-    link: "https://pratinalagiri.vercel.app/",
+    link: "https://pratin-alagiri.vercel.app/",
     github: "https://github.com/mak-1204/Pratin-Alagiri",
+    canIframe: true
+  },
+  {
+    title: "Darkwave Digital",
+    type: "FULL-STACK DEV",
+    description: "A high-performance agency landing page built with a focus on cutting-edge UI/UX, optimized performance, and modern interactive elements.",
+    tags: ["Next.js", "Tailwind CSS", "Vercel", "Animation"],
+    link: "https://darkwave-digital.vercel.app/",
+    github: "https://github.com/mak-1204",
+    canIframe: true
+  },
+  {
+    title: "HiveHaven",
+    type: "COMMUNITY PLATFORM",
+    description: "A niche social platform for enthusiasts to connect, share resources, and manage community-driven projects with integrated authentication.",
+    tags: ["Next.js", "Firebase", "Tailwind CSS", "Auth"],
+    link: "https://hivehaven.vercel.app/",
+    github: "https://github.com/mak-1204",
+    canIframe: true
+  },
+  {
+    title: "Maseesambur",
+    type: "WEB DEVELOPMENT",
+    description: "Digital storefront and brand landing page for a specialized culinary venture, featuring smooth transitions and responsive architecture.",
+    tags: ["Next.js", "Tailwind CSS", "Vercel", "UI/UX"],
+    link: "https://maseesambur.vercel.app/",
+    github: "https://github.com/mak-1204",
     canIframe: true
   },
   {
     title: "Sruthi Clinic Portal",
     type: "WEB DEVELOPMENT",
-    description: "A focused appointment booking portal for a rural clinic, streamlining patient scheduling and management. Designed to improve patient accessibility and reduce manual booking overhead.",
+    description: "A focused appointment booking portal for a rural clinic, streamlining patient scheduling and management to reduce manual overhead.",
     tags: ["Next.js", "Firebase", "Tailwind CSS", "Vercel"],
     link: "https://sruthiclinic.web.app",
     github: "https://github.com/akshaykumarm04/sruthi-clinic-portal",
@@ -23,7 +68,7 @@ const PROJECTS = [
   {
     title: "Acharya Group Website",
     type: "FULL-STACK DEV",
-    description: "Designed and developed a modern, high-performance web presence for the Acharya Group. Focused on seamless navigation, responsive architecture, and optimised loading states for a premium user experience.",
+    description: "Designed and developed a modern, high-performance web presence for the Acharya Group with optimized loading states.",
     tags: ["Next.js", "Tailwind CSS", "Firebase", "Vercel"],
     link: "https://acharya-website.vercel.app/",
     github: "https://github.com/mak-1204/acharya-website",
@@ -32,7 +77,7 @@ const PROJECTS = [
   {
     title: "COVID-19 Global Trend Analysis",
     type: "DATA ENGINEERING",
-    description: "SQL-based data exploration using joins, CTEs, temp tables, and aggregations to analyse global trends in cases, deaths, and vaccinations across countries. Prepared datasets for Tableau KPI dashboards.",
+    description: "SQL-based data exploration using joins, CTEs, and aggregations to analyse global trends. Prepared datasets for Tableau KPI dashboards.",
     tags: ["SQL", "Tableau", "Data Analysis"],
     link: "https://github.com/mak-1204/Covid_Data_Analytics",
     github: "https://github.com/mak-1204/Covid_Data_Analytics",
@@ -41,7 +86,7 @@ const PROJECTS = [
   {
     title: "Predictive Maintenance System",
     type: "MACHINE LEARNING",
-    description: "Analysed industrial machine sensor data to predict equipment failures. Trained Random Forest, SVM, and XGBoost models with SMOTE for class imbalance. Achieved 93% accuracy, reducing downtime by 25%.",
+    description: "Analysed industrial sensor data to predict equipment failures using XGBoost. Achieved 93% accuracy, reducing downtime significantly.",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE"],
     link: "https://github.com/mak-1204/Predictive-Maintenance",
     github: "https://github.com/mak-1204/Predictive-Maintenance",
@@ -69,7 +114,7 @@ export function Projects() {
                       <iframe src={project.link} className="proj-iframe" scrolling="no" tabIndex={-1}></iframe>
                     ) : (
                       <div className="flex flex-col items-center justify-center h-full text-primary/30 p-8">
-                        <span className="font-code text-[10px] mb-4 text-primary/50 tracking-tight break-all">
+                        <span className="font-code text-[10px] mb-4 text-primary/50 tracking-tight break-all text-center">
                           {project.link.replace('https://', '')}
                         </span>
                         <ExternalLink size={32} className="opacity-20" />

@@ -15,36 +15,34 @@ export function Nav() {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '-20% 0px -30% 0px',
-      threshold: [0, 0.25, 0.5, 0.75, 1],
-    };
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      let currentSection = 'about';
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
-          setActiveSection(entry.target.id);
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        // A standard 150px threshold. Because "scroll-mt-24" puts the top of the section at ~96px when clicked, 
+        // 96px is less than 150px, meaning this section will accurately correctly capture the "active" state.
+        // And because we iterate in DOM sequence, the lowest section intersecting the top viewport wins.
+        if (rect.top <= 150) {
+          currentSection = section.id;
         }
       });
-    }, observerOptions);
 
-    const sections = document.querySelectorAll('section[id]');
-    sections.forEach((section) => observer.observe(section));
-
-    const handleScroll = () => {
-      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
-      if (isAtBottom) {
-        setActiveSection('projects');
+      // Guaranteed fallback: If you reach the absolute bottom of the page, enforce 'projects'
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100) {
+        currentSection = 'projects';
       }
+
+      setActiveSection(currentSection);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Trigger once on mount
+    handleScroll();
 
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -56,7 +54,7 @@ export function Nav() {
               Akshay Kumar M
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
-              Technologist & Problem solver
+              Consultant
             </h2>
           </div>
         </div>

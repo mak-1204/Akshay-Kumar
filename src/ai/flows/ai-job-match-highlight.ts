@@ -30,6 +30,11 @@ const JobDescriptionMatchOutputSchema = z.object({
     .describe(
       "A list of project titles from the candidate's portfolio that are highly relevant to the job description. Only return project titles explicitly listed in the portfolio. If no projects are relevant, return an empty array."
     ),
+  relevantExperience: z
+    .array(z.string())
+    .describe(
+      "A list of professional experiences or roles from the candidate's portfolio highly relevant to the job description. Only return the exact role and company (e.g., 'Analyst Intern at ChampionX (SLB)'). If nothing is relevant, return an empty array."
+    ),
 });
 export type JobDescriptionMatchOutput = z.infer<
   typeof JobDescriptionMatchOutputSchema
@@ -46,7 +51,7 @@ const aiJobMatchHighlightPrompt = ai.definePrompt({
   input: {schema: JobDescriptionMatchInputSchema},
   output: {schema: JobDescriptionMatchOutputSchema},
   prompt: `You are an AI assistant designed to help recruiters quickly assess a candidate's fit for a role based on their portfolio.
-Your task is to analyze a given job description and identify the most relevant skills and projects from the candidate's provided portfolio.
+Your task is to analyze a given job description and identify the most relevant skills, projects, and professional experiences from the candidate's provided portfolio.
 
 Candidate's Portfolio:
 Name: Akshay Kumar M
@@ -68,8 +73,8 @@ Projects:
 - COVID-19 Global Trend Analysis — SQL, Tableau, Business Analysis
 - Predictive Maintenance System — Python, Scikit-learn, XGBoost, SMOTE
 
-Based on the following job description, identify the most relevant skills and projects from the portfolio above.
-Return only the exact skills and project titles as listed in the portfolio. Do not invent new skills or projects. If no skills or projects are relevant, return an empty array for that field.
+Based on the following job description, identify the most relevant skills, projects, and professional experiences from the portfolio above.
+Return only the exact items explicitly listed in the portfolio. Do not invent new skills, projects, or roles. If nothing in a category is relevant, return an empty array for that field.
 
 Job Description:
 {{{jobDescription}}}`,

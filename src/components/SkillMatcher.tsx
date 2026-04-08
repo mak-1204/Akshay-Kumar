@@ -71,7 +71,23 @@ export function SkillMatcher() {
                 </div>
               </div>
             )}
-            {result.relevantProjects.length > 0 && (
+            {result.relevantExperience && result.relevantExperience.length > 0 && (
+              <div>
+                <h4 className="text-foreground text-sm font-semibold mb-2 flex items-center gap-2">
+                  <CheckCircle2 className="text-primary h-4 w-4" />
+                  Relevant Experience
+                </h4>
+                <ul className="space-y-1">
+                  {result.relevantExperience.map((exp) => (
+                    <li key={exp} className="text-muted-foreground text-sm list-disc list-inside">
+                      {exp}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            {result.relevantProjects && result.relevantProjects.length > 0 && (
               <div>
                 <h4 className="text-foreground text-sm font-semibold mb-2 flex items-center gap-2">
                   <CheckCircle2 className="text-primary h-4 w-4" />
@@ -86,7 +102,10 @@ export function SkillMatcher() {
                 </ul>
               </div>
             )}
-            {result.relevantSkills.length === 0 && result.relevantProjects.length === 0 && (
+            
+            {(!result.relevantSkills || result.relevantSkills.length === 0) && 
+             (!result.relevantProjects || result.relevantProjects.length === 0) && 
+             (!result.relevantExperience || result.relevantExperience.length === 0) && (
               <p className="text-muted-foreground text-sm italic">
                 No direct matches found in current portfolio content. Try a different description!
               </p>

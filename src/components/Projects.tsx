@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import { SectionHeader } from "./SectionHeader";
 import { ExternalLink, ArrowRight, Github } from "lucide-react";
 
@@ -8,17 +11,17 @@ const PROJECTS = [
     description: "A collaborative trip planning platform enabling groups to coordinate itineraries, shared expenses, and logistics in real-time with seamless synchronization.",
     tags: ["Next.js", "Firebase", "Tailwind CSS", "Real-time"],
     link: "https://packtogether.vercel.app/",
-    github: "https://github.com/mak-1204",
+    github: "https://github.com/mak-1204/PackTogether",
     canIframe: true
   },
   {
     title: "Unscripted",
-    type: "AI SOLUTIONS",
-    description: "An AI-driven platform for creative content generation, leveraging LLMs to assist writers in building complex narratives and scripts dynamically.",
-    tags: ["Next.js", "AI", "Genkit", "Tailwind CSS"],
+    type: "WEB PLATFORM",
+    description: "A modern, fully-responsive website for the Unscripted club of NIT Trichy — the college's premier public speaking and debate club (an NIT Trichy version of Toastmasters). Features a secure Admin Portal, seamless event management, and mobile-optimized interfaces for smooth member interaction.",
+    tags: ["React", "Website", "Tailwind CSS"],
     link: "https://unscripted-lemon.vercel.app/",
-    github: "https://github.com/mak-1204",
-    canIframe: true
+    github: "https://github.com/mak-1204/Unscripted",
+    canIframe: false
   },
   {
     title: "Pratin Alagiri Portfolio",
@@ -35,16 +38,16 @@ const PROJECTS = [
     description: "Full-service digital marketing agency platform focusing on SEO, lead generation, and high-performance website building for growth-oriented brands.",
     tags: ["Digital Strategy", "Lead Gen", "Modern Web"],
     link: "https://darkwave-digital.vercel.app/",
-    github: "https://github.com/mak-1204",
+    github: "https://github.com/mak-1204/darkwave-digital",
     canIframe: true
   },
   {
     title: "HiveHaven",
-    type: "COMMUNITY PLATFORM",
-    description: "A niche social platform for enthusiasts to connect, share resources, and manage community-driven projects with integrated authentication.",
-    tags: ["Next.js", "Firebase", "Tailwind CSS", "Auth"],
+    type: "LEAD GEN WEBSITE",
+    description: "A high-conversion website designed for an interior design and construction firm. Engineered specifically to capture leads from paid ad campaigns, featuring optimized performance, clear calls-to-action, and a premium portfolio showcase.",
+    tags: ["Landing Page", "Lead Generation", "UI/UX"],
     link: "https://hivehaven.vercel.app/",
-    github: "https://github.com/mak-1204",
+    github: "https://github.com/mak-1204/HiveHaven",
     canIframe: true
   },
   {
@@ -53,7 +56,7 @@ const PROJECTS = [
     description: "Premium handcrafted leather footwear store in Ambur — showcasing modern style with durable materials through a refined digital storefront.",
     tags: ["Web Design", "E-com Architecture", "UI/UX"],
     link: "https://maseesambur.vercel.app/",
-    github: "https://github.com/mak-1204",
+    github: "https://github.com/mak-1204/masees-footwear",
     canIframe: true
   },
   {
@@ -95,6 +98,28 @@ const PROJECTS = [
 ];
 
 export function Projects() {
+  const wrapperRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const width = entry.contentRect.width;
+        // 1280 is our target layout width for the iframe
+        const scale = width / 1280;
+        const iframe = entry.target.querySelector('iframe');
+        if (iframe) {
+          iframe.style.transform = `scale(${scale})`;
+        }
+      }
+    });
+
+    wrapperRefs.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="projects" className="mb-24 scroll-mt-24">
       <SectionHeader number="04" title="Projects" />
@@ -107,9 +132,16 @@ export function Projects() {
               className={`group relative grid grid-cols-1 lg:grid-cols-12 gap-6 items-center`}
             >
               {/* Image Side */}
-              <div className={`lg:col-span-7 h-72 ${isEven ? 'lg:order-last' : ''}`}>
+              <div className={`lg:col-span-7 w-full ${isEven ? 'lg:order-last' : ''}`}>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="proj-img-link block h-full">
-                  <div className="proj-img-wrapper h-full border border-primary/10">
+                  <div 
+                    ref={(el) => {
+                      if (el && !wrapperRefs.current.includes(el)) {
+                        wrapperRefs.current[idx] = el;
+                      }
+                    }}
+                    className="proj-img-wrapper h-full border border-primary/10"
+                  >
                     {project.canIframe ? (
                       <iframe src={project.link} className="proj-iframe" scrolling="no" tabIndex={-1}></iframe>
                     ) : (

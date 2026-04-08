@@ -58,7 +58,7 @@
     font-feature-settings: "overline" 0, "vert" 0, "subs" 0, "sups" 0, "numr" 0, "dnom" 0, "frac" 0, "ordn" 0, "lnum" 0, "pnum" 0, "tnum" 0, "onum" 0, "zero" 0, "hist" 0, "jp78" 0, "jp83" 0, "jp90" 0, "jp04" 0, "smpl" 0, "trad" 0, "fwid" 0, "pwid" 0, "ruby" 0, "hkna" 0, "vkna" 0, "cpct" 0, "ital" 0, "halt" 0, "palt" 0, "vhal" 0, "vpal" 0, "salt" 0, "swsh" 0, "calt" 1, "liga" 1, "clig" 1, "dlig" 0, "hlig" 0, "rlig" 1, "case" 0, "smcp" 0, "c2sc" 0, "pcap" 0, "c2pc" 0, "unic" 0, "cpsp" 0, "vkrn" 0, "vpal" 0, "vhal" 0, "vkrn" 0;
   }
   h1 {
-    font-family: 'Antapani', 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Antapani', var(--font-outfit), sans-serif;
     font-weight: 500;
   }
 }
@@ -94,16 +94,18 @@
 .proj-img-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   border-radius: 4px;
   @apply bg-secondary/20;
 }
 
 .proj-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 1280px;
   height: 800px;
-  transform: scale(0.4);
   transform-origin: top left;
   pointer-events: none;
   border: none;

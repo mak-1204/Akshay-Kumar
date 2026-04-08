@@ -91,8 +91,9 @@ export default function Home() {
                 Focusing on the intersection of Data, AI, and Business.
               </p>
               <div className="flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.2em] text-muted-foreground/60">
-                <span>Built with love by Mak</span>
-                <Heart size={12} className="text-red-500 fill-red-500" />
+                <span className="flex items-center gap-1.5">
+                  Built with <Heart size={12} className="text-red-500 fill-red-500" /> by Mak
+                </span>
               </div>
             </footer>
 
